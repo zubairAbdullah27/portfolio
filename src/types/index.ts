@@ -7,4 +7,5 @@ export type Project = {
     image: string[]
     videos: string[]
     link: string
+    thumbnail: string
 }

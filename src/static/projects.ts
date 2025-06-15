@@ -2,6 +2,43 @@ import { Project } from "@/types"
 
 export const projectsData: Project[] = [
     {
+        "title": "Cuddy: more than friends",
+        "description": "Cuddy lets users rank their favorite contacts (e.g., Top 1st, Top 2nd) and share these rankings as Snapchat or Instagram stories. Selected contacts are notified with gender-aware messages if they're also on the app. Viewing who ranked you is gated behind a subscription, with support for in-app purchases. Users can choose up to 5 contacts, with higher limits unlocked by sharing the app via SMS. The app includes OTP-based login, Snapchat integration, contact permission handling, and full GDPR-compliant data deletion.",
+        "techStack": [
+            "React Native",
+            "Node.js",
+            "Swift",
+            "Firebase",
+            "Zustand"
+        ],
+        "timeline": "Nov 2024 - Jan 2025",
+        "image": [
+            "/static/images/cuddy/1.png",
+            "/static/images/cuddy/2.png",
+            "/static/images/cuddy/3.png",
+            "/static/images/cuddy/4.png",
+            "/static/images/cuddy/5.png",
+            "/static/images/cuddy/6.png",
+            "/static/images/cuddy/7.png",
+            "/static/images/cuddy/8.png",
+        ],
+        "videos": [
+            "/static/videos/cuddy/demo.mp4"
+        ],
+        "info": [
+            "Select and rank contacts (Top 1st to Top 5th) with a fun, swipe-based UI",
+            "Share rankings as native Snapchat or Instagram stories",
+            "Notifies selected users if they\u2019re on the app with gender-specific prompts",
+            "See who ranked you \u2014 gated behind a subscription wall (in-app purchases enabled)",
+            "Increase contact limits by sharing the app via SMS",
+            "OTP login via Firebase Auth for quick onboarding",
+            "Built-in support for full user data deletion",
+            "Designed with performance-first architecture using React Native + Zustand"
+        ],
+        "link": "https://apps.apple.com/us/app/cuddy-more-than-friends/id6450028991",
+        "thumbnail": "/static/images/cuddy/0.1.a.png"
+    },
+    {
         "title": "FreeInvoice - Invoice Maker",
         "description": "A business utility app that lets users create invoices with branding, taxes, digital signatures, and reusable profiles. Supports Stripe-powered payments and in-app purchases to unlock premium features. Built-in live chat, cloud sync, and modern UI.",
         "techStack": [
@@ -52,7 +89,8 @@ export const projectsData: Project[] = [
             "Premium plan unlocks live chat, export, unlimited invoices.",
             "Built with smooth UI transitions and Figma-based layout."
         ],
-        link: ""
+        link: "https://apps.apple.com/app/daninvoiceapp/id6504487228",
+        "thumbnail": "/static/images/invoice/0.1.a.png"
     },
     {
         "title": "ListenApp",
@@ -85,7 +123,8 @@ export const projectsData: Project[] = [
             "Interface remains fully functional calculator when locked.",
             "Built with privacy and discretion as top priorities."
         ],
-        link: ""
+        link: "",
+        "thumbnail": "/static/images/applisten/0.1.a.png"
     },
     {
         "title": "978Eats",
@@ -140,7 +179,8 @@ export const projectsData: Project[] = [
             "Admin dashboard includes dispatching, analytics, and account management.",
             "Driver app features geo-tracking, timed assignments, and delivery flows."
         ],
-        link: ""
+        link: "https://apps.apple.com/us/app/978merchant/id6450744437",
+        "thumbnail": "/static/images/978Eats/0.1.a.png"
     },
     {
         "title": "Marketica",
@@ -176,7 +216,8 @@ export const projectsData: Project[] = [
             "Custom filtering logic for keyword and category searches.",
             "Promotes global charity visibility with structured profiles."
         ],
-        link:""
+        link: "https://www.marketica.org",
+        "thumbnail": "/static/images/marketica/0.1.a.png"
     },
     {
         "title": "AI Assistant",
@@ -207,7 +248,8 @@ export const projectsData: Project[] = [
             "Multi-language UI and response logic with dynamic suggestions.",
             "UI components custom-built for seamless chat transitions."
         ],
-        link: ""
+        link: "https://apps.apple.com/us/app/chat-bot-app/id1672786583",
+        "thumbnail": "/static/images/chatbot/0.1.a.png"
     },
     {
         "title": "AI Art Generator",
@@ -239,7 +281,8 @@ export const projectsData: Project[] = [
             "Supports saving artwork in gallery and external formats.",
             "Provides a creative outlet with user-guided AI interaction."
         ],
-        link:""
+        link: "https://apps.apple.com/us/app/ai-artgenerator-app-1/id6446901181",
+        "thumbnail": "/static/images/artgenerator/0.1.a.png"
     },
     {
         "title": "\u00dczlet",
@@ -265,7 +308,8 @@ export const projectsData: Project[] = [
             "Search and filter logic optimized for fast performance.",
             "Focused on quick retail discovery and user personalization."
         ],
-        link: ""
+        link: "",
+        "thumbnail": "/static/images/uztelek/0.1.a.png"
     },
     {
         "title": "PDF Scanner App",
@@ -304,10 +348,11 @@ export const projectsData: Project[] = [
             "Includes document filters, folder merge, and sort functions.",
             "Monetized through in-app subscriptions and includes live chat support."
         ],
-        link: ""
+        link: "https://apps.apple.com/us/app/pdf-scanner-123/id6443606837",
+        "thumbnail": "/static/images/scanner/0.1.a.png"
     },
     {
-        "title": "FooPlus",
+        "title": "FoodPlus",
         "description": "A food donation app that connects restaurants and individuals with nearby charities or food pantries. Built with React Native and Node.js, it supports Google Maps for real-time location tracking, secure logins, delivery management, and donation tracking \u2014 reducing food waste and aiding the underserved.",
         "techStack": [
             "React Native",
@@ -337,7 +382,8 @@ export const projectsData: Project[] = [
             "Redux handles dynamic user data and screen transitions.",
             "Built to reduce food waste and support local charities."
         ],
-        link: ""
+        link: "https://apps.apple.com/us/app/978merchant/id6450744437",
+        "thumbnail": "/static/images/foodplus/0.1.a.png"
     },
     {
         "title": "BillBook",
@@ -370,7 +416,8 @@ export const projectsData: Project[] = [
             "Premium unlock via in-app purchase for advanced features.",
             "UI designed with accessibility and minimal effort in mind."
         ],
-        link: ""
+        link: "https://apps.apple.com/us/app/billbook-invoice-app-generator/id1608562944",
+        "thumbnail": "/static/images/billbook/0.1.a.png"
     },
     {
         "title": "MetricTrackerAndFollowers",
@@ -413,6 +460,7 @@ export const projectsData: Project[] = [
             "Redux used for app state management and local caching.",
             "UI/UX designed with Figma for a clean and engaging experience."
         ],
-        link: ""
+        link: "https://apps.apple.com/us/app/igviews/id1636697482",
+        "thumbnail": "/static/images/metrics_tracker_followers/0.1.a.png"
     }
 ]
