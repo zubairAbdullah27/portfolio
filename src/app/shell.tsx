@@ -28,7 +28,7 @@ export const AppShell: FC<Props> = ({ children }) => {
                     setActive={setActive}
                 />
             </aside>
-            <section className="w-full min-h-screen px-4 sm:px-5 md:px-6 lg:py-12">
+            <section className="scroll-mt-24 min-h-screen py-20 w-full px-4  sm:px-5 md:px-6 lg:py-12">
                 <div className="w-full max-w-[100%] sm:max-w-[640px] md:max-w-[768px] lg:max-w-4xl mx-auto">
                     {children}
                 </div>

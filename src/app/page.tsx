@@ -44,8 +44,34 @@ export default function Home() {
                 id="contact"
                 title="Contact"
             >
-                <>
-                </>
+                <h2 className="text-2xl font-semibold text-white mb-6">Get in Touch</h2>
+
+                <p className="text-gray-400 max-w-lg mb-6">
+                    I'm actively seeking new opportunities — whether it's freelance work, long-term collaborations, or full-time remote roles. With a strong background in cross-platform development and a focus on performance and user experience, I'm excited to contribute to meaningful projects. If you’re building something and think I might be a good fit, feel free to reach out — I’d love to connect.
+                </p>
+
+                <div className="space-y-2 mb-8">
+                    <p className="text-gray-300">
+                        📧 <a href="mailto:zubaairkhhan@gmail.com" className="underline hover:text-white">Email</a>
+                    </p>
+                    <p className="text-gray-300">
+                        💼 <a href="https://www.upwork.com/freelancers/~yourUpworkID" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">Upwork</a>
+                    </p>
+                    <p className="text-gray-300">
+                        🐙 <a href="https://github.com/zubairAbdullah27" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">Github</a>
+                    </p>
+                    <p className="text-gray-300">
+                        🔗 <a href="https://linkedin.com/in/zubair-abdullah-764376180" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">LinkedIn</a>
+                    </p>
+                </div>
+
+                <a
+                    href="/Zubair_Abdullah_Resume.pdf"
+                    download
+                    className="inline-block bg-white text-black px-4 py-2 rounded-md font-medium hover:bg-gray-300 transition"
+                >
+                    📄 Download Resume
+                </a>
             </Section>
         </>
     );

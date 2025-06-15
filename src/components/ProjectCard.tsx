@@ -10,7 +10,7 @@ export const ProjectCard: FC<Props> = ({ project, setSelectedProject }) => {
     return (
         <div
             onClick={() => setSelectedProject(project)}
-            className="flex flex-col md:flex-row items-start gap-6 mb-10 rounded-xl py-4 hover:p-2   hover:bg-gradient-to-br from-[#0f172a] to-[#1e293b] transition-transform hover:scale-[1.01] cursor-pointer"
+            className="flex flex-col md:flex-row items-start gap-6 mb-10 rounded-xl py-4 md:hover:pl-4 hover:bg-gradient-to-br from-[#0f172a] to-[#1e293b] transition-transform hover:scale-[1.01] cursor-pointer"
         >
             {/* Thumbnail + Timeline */}
             <div className="w-full md:w-48 flex flex-col justify-between min-h-[160px]">

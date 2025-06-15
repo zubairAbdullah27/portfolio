@@ -1,45 +1,40 @@
-import { Dispatch, SetStateAction, useEffect } from "react";
+import { useEffect } from "react";
 
 type Props = {
-    sectionTitles: string[];
-    active: string;
-    setActive: Dispatch<SetStateAction<string>>;
-    offset?: number;
+  sectionTitles: string[];
+  active: string;
+  setActive: (val: string) => void;
+  offset?: number;
 };
 
-export const useScrollSpy = ({
-    sectionTitles,
-    active,
-    setActive,
-    offset = 80, // increase for sticky nav compensation
-}: Props) => {
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                const visibleSections = entries
-                    .filter((entry) => entry.isIntersecting)
-                    .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+export const useScrollSpy = ({ sectionTitles, active, setActive, offset = 100 }: Props) => {
+  useEffect(() => {
+    const handleScroll = () => {
+      let closestSection: string | null = null;
+      let smallestDistance = Infinity;
 
-                if (visibleSections.length > 0) {
-                    const topSection = visibleSections[0].target.id;
-                    if (topSection !== active) {
-                        setActive(topSection);
-                    }
-                }
-            },
-            {
-                rootMargin: `-${offset}px 0px -60% 0px`,
-                threshold: [0.2, 0.4, 0.6, 0.8],
-            }
-        );
+      for (const id of sectionTitles) {
+        const el = document.getElementById(id);
+        if (!el) continue;
 
-        sectionTitles.forEach((id) => {
-            const el = document.getElementById(id);
-            if (el) observer.observe(el);
-        });
+        const rect = el.getBoundingClientRect();
+        const distance = Math.abs(rect.top - offset);
 
-        return () => observer.disconnect();
-    }, [sectionTitles, offset, active, setActive]);
+        if (distance < smallestDistance) {
+          smallestDistance = distance;
+          closestSection = id;
+        }
+      }
 
-    return active;
+      if (closestSection && closestSection !== active) {
+        setActive(closestSection);
+      }
+    };
+
+    handleScroll(); // Run on mount
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [sectionTitles, active, setActive, offset]);
+
+  return active;
 };
