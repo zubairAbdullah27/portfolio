@@ -66,7 +66,7 @@ export default function Home() {
                 </div>
 
                 <a
-                    href="/Zubair_Abdullah_Resume.pdf"
+                    href="/static/files/Zubair_Abdullah_Resume.pdf"
                     download
                     className="inline-block bg-white text-black px-4 py-2 rounded-md font-medium hover:bg-gray-300 transition"
                 >
