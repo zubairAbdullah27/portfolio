@@ -42,9 +42,8 @@ export default function Home() {
             </Section>
             <Section
                 id="contact"
-                title="Contact"
+                title="Get in Touch"
             >
-                <h2 className="text-2xl font-semibold text-white mb-6">Get in Touch</h2>
 
                 <p className="text-gray-400 max-w-lg mb-6">
                     I'm actively seeking new opportunities — whether it's freelance work, long-term collaborations, or full-time remote roles. With a strong background in cross-platform development and a focus on performance and user experience, I'm excited to contribute to meaningful projects. If you’re building something and think I might be a good fit, feel free to reach out — I’d love to connect.
