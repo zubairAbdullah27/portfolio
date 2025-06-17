@@ -382,7 +382,7 @@ export const projectsData: Project[] = [
             "Redux handles dynamic user data and screen transitions.",
             "Built to reduce food waste and support local charities."
         ],
-        link: "https://apps.apple.com/us/app/978merchant/id6450744437",
+        link: "https://apps.apple.com/us/app/food-plus/id1640979923",
         "thumbnail": "/static/images/foodplus/0.1.a.png"
     },
     {
