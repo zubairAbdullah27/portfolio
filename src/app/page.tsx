@@ -54,7 +54,7 @@ export default function Home() {
                         📧 <a href="mailto:zubaairkhhan@gmail.com" className="underline hover:text-white">Email</a>
                     </p>
                     <p className="text-gray-300">
-                        💼 <a href="https://www.upwork.com/freelancers/~yourUpworkID" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">Upwork</a>
+                        💼 <a href="https://upwork.com/freelancers/~013f2346b8cc1c8105" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">Upwork</a>
                     </p>
                     <p className="text-gray-300">
                         🐙 <a href="https://github.com/zubairAbdullah27" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">Github</a>
